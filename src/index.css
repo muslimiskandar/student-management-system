@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-repeat: no-repeat;
+  
+}
+
+.login-page {
+    background-image: linear-gradient(rgb(89, 142, 255), rgb(247, 92, 239), rgb(181, 47, 235));
+display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-container {
+  background-color: white;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 1px 30px rgb(23, 27, 39);
+}
+
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  font-size: 110px;
+  color: rgb(161, 1, 209);
+}
+
+.title {
+  position: relative;
+  top: -20px;
+  margin-bottom: 10px;
+  color: blue;
+}
+
+
+.input-combine {
+  border: 1px solid rgb(71, 0, 71);
+  padding-left: 5px;
+  height: 35px;
+  display: flex;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.input-combine span {
+  padding-top: 7px;
+  color: purple;
+}
+
+.login-form input {
+  width: 100%;
+  height: 35px;
+  outline: none;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  transition: border 1s;
+  border: none;
+  background-color: transparent;
+}
+
+
+.login-form > div {
+  height: 60px;
+}
+
+
+.login-form button {
+  width: 250px;
+  height: 40px;
+  background-image: linear-gradient(to left, rgb(49, 112, 248), rgb(255, 39, 226));
+  border: none;
+  font-size: 17px;
+  margin-top: 2px;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.2s ease-in 0.2s;
+  border-radius: 5px;
+}
+.login-form button:hover {
+  opacity: 1;
+}
+
+.error {
+  color: red;
+  font-size: 11px;
+}
+
+/* Side Panel */
+.side-panel {
+  background-color: purple;
+  height: 100vh;
+  width: 180px;
+  font-size: 17px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+
+.side-panel ul {
+  padding-left: 0 !important;
+}
+
+.side-panel li {
+  list-style-type: none;
+  border-bottom: 1px solid gray;
+  padding-top: 20px !important;
+  padding-left: 20px !important;
+}
+
+.side-panel li a {
+  text-decoration: none;
+  color: white;
+  /* float: left  ; */
+}
+
+.side-panel li:hover {
+  background-color: rgb(167, 7, 167);
+}
+
+.profile {
+  color: white;
+  text-align: center;
+  padding-top: 5px !important;
+  margin-bottom: 50px !important;
+}
+
+.profile svg {
+  font-size: 100px;
+  margin-bottom: 10px;
+}
+
+.profile p {
+  margin: 0 !important;
+}
+
+.dashboard {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.col-sm-2, .col-sm-10 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.online-appeals {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.newAppeal-buttonDiv {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.green-button {
+  outline: none !important; 
+  border: none !important;
+  background-image: linear-gradient(190deg, rgb(70, 226, 70), rgb(36, 110, 6));
+  color: white;
+  /* padding: 5px !important; */
+}
+
+.green-button:hover {
+  background-image: linear-gradient(90deg, rgb(60, 146, 60), rgb(68, 182, 23));
+  border: none !important;
+  outline: none !important;
+}
+button {
+  border: none !important;
+}
+
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.newAppeal-buttonDiv svg { 
+  padding-bottom: 3px !important;
+  font-size: 20px;
+}
+
+.online-appeals button {
+  font-size: 18px !important;
+}
+
+.time-table {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.table-header {
+  text-align: center;
+  height: 50px;
+  vertical-align: middle;
+  background-color: #f7e8fa;
+}
+
+.download {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px !important;
+}
+
+.download-button {
+  width: 150px;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(190deg, rgb(70, 226, 70), rgb(36, 110, 6));
+  color: white;
+  padding: 5px !important;
+
+}
+
+.download-button:hover {
+  background-image: linear-gradient(90deg, rgb(60, 146, 60), rgb(68, 182, 23))
+}
+
+.download-button svg {
+   padding-bottom: 2px !important;
+  font-size: 22px;
+}
+
+.timetable-head {
+  margin-bottom: 30px !important;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* line-height: normal; */
+}
+
+.table-delete {
+  cursor: pointer;
+  color: rgb(82, 3, 82);
+}
+
+.appeals-header {
+  text-align: center;
+}
+
+.subject-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.subject-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 50px;
+  text-align: center;
+  box-shadow: 3px 3px 6px rgba(56, 56, 56, 0.747);
+  background-color: rgb(55, 0, 100);
+  color: yellow;
+  cursor: pointer;
+  font-size: 19px;
+  border-radius: 10px;
+  transition: transform .5s;
+}
+
+.subject-container div:hover {
+  transform: scale(1.1);
+}
+
+.col-sm-10 {
+  margin-top: 40px !important;
+  padding: 0 50px 0 0 !important;
+}
+
+.head {
+  font-size: 18px;
+  border-bottom: 1px solid rgba(202, 130, 202, 0.733);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px !important;
+}
+
+.head span svg {
+  font-size: 25px !important;
+  color: rgb(214, 1, 214);
+  cursor: pointer;
+}
+
+/* Subject Attendance*/
+.active-attendance {
+  color: green;
+  font-size: 12px;
+}
+
+.no-attendance {
+  color: rgb(218, 5, 5);
+  font-weight: bolder;
+}
+.pagination > .active > a {
+  background-color: rgb(145, 1, 145) !important;
+  outline: none !important;
+  border: none;
+}
+
+.pagination > li:not(.active) > a {
+  color: rgb(214, 1, 214) !important;
+}
+
+.pagination > li > a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.gpa-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Resources */
+.download-resource {
+  color: purple;
+}
+
+/*Notifications*/
+.notification-list {
+  list-style-type: none;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important ;
+}
+
+.notification-list-item {
+  background-color: rgba(255, 105, 255, 0.5);
+  border-bottom: 1px solid purple;
+  padding: 5px; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification-list-item svg {
+  color: grey;
+  padding-bottom: 2px;
+  font-size: 22px;
+}
+
+.notification-list-item svg:hover{
+  color: black;
+}
+
+.notification-list-item:hover {
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+}
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+}
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: white;
+  font-size: 19px;
+  background-color: rgb(117, 15, 117);
+}
+
+.bm-burger-button {
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+  width: 250px !important;
+  top: 0;
+}
+
+.bm-menu {
+  background: purple;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-overlay {
+  background: none !important;
+}
+
+.dashboard .centered-main {
+  margin: 80px 35px 0 35px;
+}
+
+@media (max-width: 500px) { 
+  .time-table .react-bootstrap-table {
+    font-size: 10px;
+  }
+  .dashboard .centered-main {
+    margin: 80px 20px 0 20px;
+  }
+  .bm-burger-button {
+    left: 20px;
+  }
+
+  .exam-results .react-bootstrap-table {
+    font-size: 12px;
+    overflow-y: scroll;
+  }
+  .online-appeals .react-bootstrap-table {
+    font-size: 13px;
+    overflow-y: scroll;
+  }
+ }
+
+
+.is-active {
+  background-color: yellow !important;
+}
+
+.personalInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.personalInfo > img {
+  border-radius: 50%;
+  border: 5px solid purple;
+  margin-bottom: 20px;
+}
+.personalInfo > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome, .welcome-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-head {
+  margin-bottom: 20px;
+}
+
+.welcome ul {
+  margin-top: 10px;
+}
+.welcome li {
+  margin-bottom: 10px;
+}
